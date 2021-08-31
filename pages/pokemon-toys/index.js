@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import {Layout} from '../../components/layout'
+import {Layout} from '../../components/Layout'
 import styles from './index.module.less'
 import { useRouter } from 'next/router'
-import ImagePanel from '../../components/image-panel/image-panel'
+import ImagePanel from '../../components/imagePanel/ImagePanel'
 import {Button} from '@material-ui/core';
 import {Skeleton} from '@material-ui/lab';
 

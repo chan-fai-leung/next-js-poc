@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import styles from './image-panel.module.less'
+import styles from './imagePanel.module.less'
 import Image from 'next/image'
 
 const ImagePanel = ({className, id, name, onClick, url}) => (

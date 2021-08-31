@@ -1,6 +1,6 @@
-import {Layout} from '../../components/layout'
+import {Layout} from '../../components/Layout'
 import styles from '../pokemon-toys/index.module.less'
-import ImagePanel from '../../components/image-panel/image-panel'
+import ImagePanel from '../../components/imagePanel/ImagePanel'
 
 export default function Home({post}) {
     return (

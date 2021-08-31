@@ -1,9 +1,9 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import {Layout} from '../../../components/layout'
-import LabelValue from '../../../components/label-value/label-value'
+import {Layout} from '../../../components/Layout'
+import LabelValue from '../../../components/labelValue/LabelValue'
 import styles from './index.module.less'
-import Evolution from '../../../page-components/pokemon-toys/evolution/evolution'
+import Evolution from '../../../pageComponents/pokemonToys/evolution/evolution'
 import PropTypes from 'prop-types';
 import Image from 'next/image'
 

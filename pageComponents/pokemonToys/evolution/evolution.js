@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import styles from './evolution.module.less'
-import ImagePanel from '../../../components/image-panel/image-panel'
+import ImagePanel from '../../../components/imagePanel/ImagePanel'
 
 const Evolution = ({evolution}) => {
     const router = useRouter()

@@ -1,6 +1,6 @@
 import styles from './layout.module.css'
-import NavigationMenu from "./top-navigation/navigation-menu";
-import BreadCrumbs from './bread-crumbs/bread-crumbs'
+import NavigationMenu from "./topNavigation/navigation-menu";
+import BreadCrumbs from './breadCrumbs/BreadCrumbs'
 
 export const Layout = ({ children }) => {
     return <div>

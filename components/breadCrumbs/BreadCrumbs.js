@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useRouter } from 'next/router'
-import styles from './bread-crumbs.module.less'
+import styles from './breadCrumbs.module.less'
 import Link from 'next/link'
 
 const BreadCrumbs = ({href, title}) => {

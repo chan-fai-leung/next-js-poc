@@ -1,4 +1,4 @@
-import styles from './label-value.module.less'
+import styles from './labelValue.module.less'
 import classNames from 'classnames'
 
 const LabelValue = ({className, labelText, value}) => (
