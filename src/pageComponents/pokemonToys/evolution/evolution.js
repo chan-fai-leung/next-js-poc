@@ -13,7 +13,9 @@ const Evolution = ({evolution}) => {
                     evolution.map((item, index) => (
                         <ImagePanel
                             id={item.id}
-                            key={index} name={item.name}
+                            displayText={item.name}
+                            key={index}
+                            name={item.name}
                             onClick={() => router.push(`/pokemon-toys/${item.name}`)}
                         />
                     ))
