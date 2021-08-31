@@ -3,7 +3,8 @@ import favoritePokemonReducer from "../pageComponents/pokemonToys/favorite/favor
 
 export const store = configureStore({
     reducer: {
-        favoritePokemon: favoritePokemonReducer
+        favoritePokemon: favoritePokemonReducer,
+        test2: favoritePokemonReducer
     },
 })
 

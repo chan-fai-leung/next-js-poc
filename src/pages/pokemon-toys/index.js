@@ -29,10 +29,9 @@ export default function Home({post}) {
                         post.results.map((item) => {
                             const urlList = item.url.split('/');
                             const id = urlList[urlList.length - 2];
-                            const isAFavoritePokemon = list.includes({
-                                id,
-                                name: item.name
-                            });
+                            const isAFavoritePokemon = list.findIndex((item) => {
+                                return item.id === id
+                            }) >= 0;
 
                             return (
                                 <ImagePanel
@@ -51,12 +50,12 @@ export default function Home({post}) {
                                                 onClick={(event) => {
                                                     event.stopPropagation();
                                                     if (isAFavoritePokemon) {
-                                                        dispatch(removeFromFavorite({
+                                                        dispatch(removeFromFavorite(id))
+                                                    } else {
+                                                        dispatch(addToFavorite({
                                                             name: item.name,
                                                             id
                                                         }))
-                                                    } else {
-                                                        dispatch(addToFavorite(item.id))
                                                     }
                                                 }}
                                             >

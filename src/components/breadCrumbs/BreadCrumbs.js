@@ -26,9 +26,11 @@ const BreadCrumbs = ({href, title}) => {
         return arr;
     }, []);
 
-    return urlList.length > 0 && (<div>{
+    return urlList.length > 0 && (<div className={styles.bread}>{
         urlList.map((item) => (
-            <Link key={item.url} href={item.url}><a>{item.name}</a></Link>
+            <span className={styles.crumb} key={item.url}>
+                <Link href={item.url}><a>{item.name}</a></Link>
+            </span>
         ))
     }</div>)
 }

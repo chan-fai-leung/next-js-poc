@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useRouter } from 'next/router'
-import styles from './navigation-item.module.less'
+import styles from './navigationItem.module.less'
 import Link from 'next/link'
 
 const NavigationItem = ({href, title}) => {

@@ -2,3 +2,16 @@
     display: grid;
     grid-template-columns: 100px 1fr;
 }
+
+.bread {
+    padding: 5px 0;
+
+    .crumb {
+        &:after {
+            content: '>';
+            position: relative;
+            padding-left: 4px;
+            top: 1px;
+        }
+    }
+}

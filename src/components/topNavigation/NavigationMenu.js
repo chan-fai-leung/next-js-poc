@@ -1,7 +1,6 @@
-import styles from './navigation-menu.module.less';
-import classNames from 'classnames';
-import { useRouter } from 'next/router'
-import NavigationItem from "./navigation-item";
+import styles from './navigationMenu.module.less';
+import NavigationItem from "./NavigationItem";
+import NavigationSubMenu from './NavigationSubMenu';
 
 const NavigationMenu = () => {
     return (
@@ -20,6 +19,7 @@ const NavigationMenu = () => {
                     title='Pokemon Cards'
                 />
             </div>
+            <NavigationSubMenu/>
         </nav>
     );
 };
