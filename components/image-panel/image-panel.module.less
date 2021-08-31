@@ -1,0 +1,19 @@
+.rowItem {
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 2;
+
+    .image {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    &:hover {
+        .name {
+            transform: scale(1.2);
+        }
+    }
+}

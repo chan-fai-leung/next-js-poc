@@ -1,4 +1,13 @@
-/** @type {import('next').NextConfig} */
+const withLess = require("next-with-less");
+
 module.exports = {
-  reactStrictMode: true,
-}
+    ...withLess({
+        lessLoaderOptions: {},
+    }),
+    images: {
+        domains: [
+            'images.pokemontcg.io',
+            'raw.githubusercontent.com'
+        ],
+    },
+};
