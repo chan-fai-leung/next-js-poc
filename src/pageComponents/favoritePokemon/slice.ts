@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 interface FavoritePokemonState {
-    listOfFavorite: {id: number; name: string}[]
+    listOfFavorite: {id: number; name: string;}[]
 }
 
 const favoritePokemonSlice = createSlice({

@@ -1,6 +1,6 @@
 import './styles.css'
 import { Provider } from 'react-redux'
-import {store} from '../app/store'
+import {store} from '../src/app/store'
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {

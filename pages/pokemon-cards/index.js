@@ -1,6 +1,6 @@
-import {Layout} from '../../components/Layout'
-import styles from '../pokemon-toys/index.module.less'
-import ImagePanel from '../../components/imagePanel/ImagePanel'
+import {Layout} from '../../src/components/Layout'
+import styles from '../pokemon/index.module.less'
+import ImagePanel from '../../src/components/imagePanel/ImagePanel'
 
 export default function Home({post}) {
     return (
@@ -28,5 +28,6 @@ export async function getStaticProps() {
     const post = await res.json()
 
     // Pass post data to the page via props
-    return { props: { post } }
+    return { props: { post },
+    revalidate: 1,}
 }

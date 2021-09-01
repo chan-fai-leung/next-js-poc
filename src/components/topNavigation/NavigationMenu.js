@@ -11,8 +11,8 @@ const NavigationMenu = () => {
                     title='Home'
                 />
                 <NavigationItem
-                    href='/pokemon-toys'
-                    title='Pokemon Toys'
+                    href='/pokemon'
+                    title='Pokemon'
                 />
                 <NavigationItem
                     href='/pokemon-cards'

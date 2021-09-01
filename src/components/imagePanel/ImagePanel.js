@@ -15,7 +15,12 @@ const ImagePanel = ({
         onClick={onClick}
     >
         <div className={styles.image}>
-            <Image src={url || `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt={name} layout='fill' objectFit='contain'/>
+            <Image
+                src={url || `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
+                alt={name}
+                layout='fill'
+                objectFit='contain'
+            />
         </div>
         <div className={styles.name}>{displayText}</div>
     </div>

@@ -6,13 +6,10 @@ const NavigationSubMenu = () => {
     const router = useRouter()
     const pathList = router.asPath.split('/');
 
-    console.log(pathList);
-
-
     return (
         <div className={styles.list}>
             <NavigationSubItem
-                href='/pokemon-toys/favorites'
+                href='/pokemon/favorites'
                 title='Favorites'
             />
         </div>
